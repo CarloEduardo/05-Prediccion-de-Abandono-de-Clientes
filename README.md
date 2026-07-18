@@ -121,8 +121,8 @@ El script realiza automáticamente las siguientes tareas:
         <th>Precisión de los Modelos Entrenados</th>
     </tr>
     <tr>
-        <td><img src="Screenshots\Model_Performance_Accuracy.png"/></td>
-    </tr>
+        <td><img src="images\Model_Performance_Accuracy.png"/></td>
+    </tr>images
 </table>
 
 ## 6. Conclusiones <a id="6"></a>
