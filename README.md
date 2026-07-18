@@ -13,7 +13,7 @@ El proyecto sigue la metodología **CRISP-DM (Cross-Industry Standard Process fo
 El modelo predictivo de abandono de clientes constituye una solución basada en datos diseñada para abordar el desafío constante de la pérdida de clientes en industrias basadas en suscripciones. Su objetivo es identificar a los clientes con mayor riesgo de abandonar el servicio, permitiendo a la empresa implementar acciones preventivas y desarrollar estrategias de retención personalizadas que contribuyan a mejorar la fidelización de los clientes.
 
 ## Tabla de Contenidos 📖
-- [Descripción General del Proyecto](#project-overview)
+- [Descripción del Proyecto](#project-overview)
 - [Enlaces del Proyecto](#project-links-link)
 - [Herramientas Utilizadas en el Proyecto](#some-tools-used-for-the-project-toolbox)
 - [Conjunto de Datos](#dataset-floppy_disk)
@@ -23,11 +23,6 @@ El modelo predictivo de abandono de clientes constituye una solución basada en 
 - [Conclusiones y Recomendaciones](#conclusion-and-recommendation)
 - [Cómo Utilizar este Repositorio](#how-to-use-this-repository-monocle_face)
 - [Author](#author-writing_hand)
-
-## Project Links :link:
-| Notebook                                     |             Published Article             |                                                                                                                                                          PowerBI Dashboard |
-| ---------------------------------------- | :---------------------------------------: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| [Modelo de Clasificación de Abandono de Clientes](https://github.com/Azie88/ML-Classification-Customer-Churn-Prediction/blob/main/Project_notebook.ipynb) | [Artículo ](https://medium.com/@obandoandrew8/machine-learning-for-classification-problems-customer-churn-prediction-ae46c574e60) | [Ver Dashboard](https://app.powerbi.com/view?r=eyJrIjoiOWE3MjUyZDQtOTQwMi00MzRiLTk0MGItOTY0MDkwYTExNWY5IiwidCI6IjQ0ODdiNTJmLWYxMTgtNDgzMC1iNDlkLTNjMjk4Y2I3MTA3NSJ9) |
 
 ##  Herramientas Utilizadas en el Proyecto :toolbox:
 <p align="left">
@@ -41,121 +36,30 @@ El modelo predictivo de abandono de clientes constituye una solución basada en 
 
 ## Dataset :floppy_disk:
 
-<table>
-<thead><tr>
-<th><strong>Nombre de la Variable</strong></th>
-<th><strong>Descripción</strong></th>
-<th><strong>Tipo de Dato</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>customerID</td>
-<td>Contiene el identificador único del cliente</td>
-<td>Categórico</td>
-</tr>
-<tr>
-<td>gender</td>
-<td>Indica si el cliente es mujer o hombre</td>
-<td>Categórico</td>
-</tr>
-<tr>
-<td>SeniorCitizen</td>
-<td>Indica si el cliente es un adulto mayor o no (1 = Sí, 0 = No)</td>
-<td>Numérico (entero)</td>
-</tr>
-<tr>
-<td>Partner</td>
-<td>Indica si el cliente tiene pareja (Sí, No)</td>
-<td>Categórico</td>
-</tr>
-<tr>
-<td>Dependents</td>
-<td>Indica si el cliente tiene dependientes (Sí, No)</td>
-<td>Categórico</td>
-</tr>
-<tr>
-<td>tenure</td>
-<td>Número de meses que el cliente ha permanecido en la empresa</td>
-<td>Numérico (entero)</td>
-</tr>
-<tr>
-<td>PhoneService</td>
-<td>Indica si el cliente cuenta con servicio telefónico (Sí, No)</td>
-<td>Categórico</td>
-</tr>
-<tr>
-<td>MultipleLines</td>
-<td>Indica si el cliente tiene múltiples líneas telefónicas (Sí, No, Sin servicio telefónico)</td>
-<td>Categórico</td>
-</tr>
-<tr>
-<td>InternetService</td>
-<td>Tipo de servicio de Internet del cliente (DSL, Fibra óptica, Sin servicio)</td>
-<td>Categórico</td>
-</tr>
-<tr>
-<td>OnlineSecurity</td>
-<td>Indica si el cliente cuenta con servicio de seguridad en línea (Sí, No, Sin servicio de Internet)</td>
-<td>Categórico</td>
-</tr>
-<tr>
-<td>OnlineBackup</td>
-<td>Indica si el cliente cuenta con servicio de respaldo en línea (Sí, No, Sin servicio de Internet)</td>
-<td>Categórico</td>
-</tr>
-<tr>
-<td>DeviceProtection</td>
-<td>Indica si el cliente cuenta con servicio de protección de dispositivos (Sí, No, Sin servicio de Internet)</td>
-<td>Categórico</td>
-</tr>
-<tr>
-<td>TechSupport</td>
-<td>Indica si el cliente cuenta con soporte técnico (Sí, No, Sin servicio de Internet)</td>
-<td>Categórico</td>
-</tr>
-<tr>
-<td>streamingTV</td>
-<td>Indica si el cliente cuenta con servicio de televisión por streaming (Sí, No, Sin servicio de Internet)</td>
-<td>Categórico</td>
-</tr>
-<tr>
-<td>streamingMovies</td>
-<td>Indica si el cliente cuenta con servicio de películas por streaming (Sí, No, Sin servicio de Internet)</td>
-<td>Categórico</td>
-</tr>
-<tr>
-<td>Contract</td>
-<td>Tipo de contrato del cliente (Mensual, Un año, Dos años)</td>
-<td>Categórico</td>
-</tr>
-<tr>
-<td>PaperlessBilling</td>
-<td>Indica si el cliente utiliza facturación electrónica (Sí, No)</td>
-<td>Categórico</td>
-</tr>
-<tr>
-<td>PaymentMethod</td>
-<td>Método de pago del cliente (Cheque electrónico, Cheque enviado por correo, Transferencia bancaria, Tarjeta de crédito)</td>
-<td>Categórico</td>
-</tr>
-<tr>
-<td>MonthlyCharges</td>
-<td>Monto cobrado mensualmente al cliente</td>
-<td>Numérico (entero)</td>
-</tr>
-<tr>
-<td>TotalCharges</td>
-<td>Monto total cobrado al cliente</td>
-<td>Objeto</td>
-</tr>
-<tr>
-<td>Churn</td>
-<td>Indica si el cliente abandonó el servicio o no (Sí, No)</td>
-<td>Categórico</td>
-</tr>
-</tbody>
-</table>
+**Descripción de variables de las bases de datos**
+| **Nombre de la Variable** | **Descripción** | **Tipo de Dato** |
+|---------------------------|-----------------|------------------|
+| `customerID` | Contiene el identificador único del cliente. | Categórico |
+| `gender` | Indica si el cliente es mujer o hombre. | Categórico |
+| `SeniorCitizen` | Indica si el cliente es un adulto mayor o no (1 = Sí, 0 = No). | Numérico (entero) |
+| `Partner` | Indica si el cliente tiene pareja (Sí, No). | Categórico |
+| `Dependents` | Indica si el cliente tiene dependientes (Sí, No). | Categórico |
+| `tenure` | Número de meses que el cliente ha permanecido en la empresa. | Numérico (entero) |
+| `PhoneService` | Indica si el cliente cuenta con servicio telefónico (Sí, No). | Categórico |
+| `MultipleLines` | Indica si el cliente tiene múltiples líneas telefónicas (Sí, No, Sin servicio telefónico). | Categórico |
+| `InternetService` | Tipo de servicio de Internet del cliente (DSL, Fibra óptica, Sin servicio). | Categórico |
+| `OnlineSecurity` | Indica si el cliente cuenta con servicio de seguridad en línea (Sí, No, Sin servicio de Internet). | Categórico |
+| `OnlineBackup` | Indica si el cliente cuenta con servicio de respaldo en línea (Sí, No, Sin servicio de Internet). | Categórico |
+| `DeviceProtection` | Indica si el cliente cuenta con servicio de protección de dispositivos (Sí, No, Sin servicio de Internet). | Categórico |
+| `TechSupport` | Indica si el cliente cuenta con soporte técnico (Sí, No, Sin servicio de Internet). | Categórico |
+| `StreamingTV` | Indica si el cliente cuenta con servicio de televisión por streaming (Sí, No, Sin servicio de Internet). | Categórico |
+| `StreamingMovies` | Indica si el cliente cuenta con servicio de películas por streaming (Sí, No, Sin servicio de Internet). | Categórico |
+| `Contract` | Tipo de contrato del cliente (Mensual, Un año, Dos años). | Categórico |
+| `PaperlessBilling` | Indica si el cliente utiliza facturación electrónica (Sí, No). | Categórico |
+| `PaymentMethod` | Método de pago del cliente (Cheque electrónico, Cheque enviado por correo, Transferencia bancaria, Tarjeta de crédito). | Categórico |
+| `MonthlyCharges` | Monto cobrado mensualmente al cliente. | Numérico (decimal) |
+| `TotalCharges` | Monto total cobrado al cliente. | Objeto (`object`) |
+| `Churn` | Indica si el cliente abandonó el servicio o no (Sí, No). | Categórico |
 
 ## Proceso
 
@@ -242,8 +146,5 @@ Los dos comandos extensos tienen la misma estructura: encadenan varias instrucci
 Carlos Eduardo Torres Garcia
 
 <a href="https://www.linkedin.com/in/carlo4-eduardo-torres-garcia/"><img align="left" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="Carlos Eduardo Torres Garcia | LinkedIn"/></a>
-<a href="https://medium.com/@obandoandrew8">
-![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)
-</a>
 
 ---
