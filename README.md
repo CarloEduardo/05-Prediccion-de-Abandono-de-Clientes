@@ -13,25 +13,13 @@ El proyecto sigue la metodología **CRISP-DM (Cross-Industry Standard Process fo
 El modelo predictivo de abandono de clientes constituye una solución basada en datos diseñada para abordar el desafío constante de la pérdida de clientes en industrias basadas en suscripciones. Su objetivo es identificar a los clientes con mayor riesgo de abandonar el servicio, permitiendo a la empresa implementar acciones preventivas y desarrollar estrategias de retención personalizadas que contribuyan a mejorar la fidelización de los clientes.
 
 ## Contenidos 📖
-- [Descripción del Proyecto](#project-overview)
-- [Enlaces del Proyecto](#project-links-link)
-- [Herramientas Utilizadas en el Proyecto](#some-tools-used-for-the-project-toolbox)
-- [Conjunto de Datos](#dataset-floppy_disk)
-- [Proceso](#process)
-- [Rendimiento del Modelo](#model-performance-accuracy-bar_chart)
-- [Dashboard](#power-bi-dashboard-tv)
-- [Conclusiones y Recomendaciones](#conclusion-and-recommendation)
-- [Cómo Utilizar este Repositorio](#how-to-use-this-repository-monocle_face)
-- [Author](#author-writing_hand)
-
 1. [**Requisitos**](#1)
 2. [**Instalación y uso**](#2)
 3. [**Variables**](#3)
 4. [**Funcionamiento del script**](#4)
 5. [**Resultado**](#5)
-6. [**Observaciones**](#6)
+6. [**Conclusiones**](#6)
 ___
-
 
 ## 1. Requisitos ⚙️ <a id='1'></a>
 Para ejecutar este proyecto únicamente se requiere:
@@ -126,7 +114,7 @@ El script realiza automáticamente las siguientes tareas:
 
 - Presentar las conclusiones y documentar el proyecto mediante la elaboración de un artículo o informe técnico.
 
-## 5. Resultado 📂<a id="5"></a>
+## 5. Resultado :bar_chart:<a id="5"></a>
 
 <table>
     <tr>
@@ -137,7 +125,7 @@ El script realiza automáticamente las siguientes tareas:
     </tr>
 </table>
 
-## 6. Observaciones ⚠️<a id="6"></a>
+## 6. Conclusiones <a id="6"></a>
 
 - El número de meses que el cliente ha permanecido en la empresa (**tenure**) y el tipo de contrato del cliente (**Contract**) son las variables más importantes y presentan la mayor relación con el abandono de clientes (**Churn**).
 
@@ -151,15 +139,15 @@ El script realiza automáticamente las siguientes tareas:
 
 - Los métodos de **ensamble (Ensemble Methods)** presentan un mejor desempeño en tareas de clasificación en comparación con los modelos basados en un único clasificador.
 
-
-## Licencia <a id="9"></a>
+## Licencia
 Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENSE](/LICENSE) para más detalles.
 
-## Autor 👨‍💻<a id="10"></a>
+## Autor 👨‍💻
+**Carlos Eduardo Torres García**
 
-## Autor :writing_hand:
-Carlos Eduardo Torres Garcia
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/carlo4-eduardo-torres-garcia/)
+[![X Twitter](https://img.shields.io/badge/Twitter-000000?style=flat&logo=x&logoColor=white)](https://x.com/Carlo4_Eduardo)
 
-<a href="https://www.linkedin.com/in/carlo4-eduardo-torres-garcia/"><img align="left" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="Carlos Eduardo Torres Garcia | LinkedIn"/></a>
+[**⬆ Volver al inicio**](#a)
 
 ---
